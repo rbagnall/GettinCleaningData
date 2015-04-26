@@ -44,7 +44,7 @@ There are four variables
 The activity performed while measurements were recorded
 
  - class = factor
- - six levels
+ - six levels with the following units:
 
 - laying
 - sitting
@@ -60,30 +60,30 @@ Subjects who performed the activity. Each subject is assigned a unique integer f
  
  - class = int
  - thirty values
- - 1:30
+ - Units are 1:30
 
 #Variable 3: feature
 
  - class = factor
  - 86 levels
- - feature names are composite values of the following:
+ - feature names are composite values of the following units:
 
-- angle: angle between vectors
-- freq: frequency
-- body: body linear acceleration
-- time: time
+- angle: angular velocity
+- freq: frequency domain signal
+- body: body linear acceleration velocity
+- time: time domain signal
 - gyro: gyroscopic
-- acc: acceleration
+- acc: acceleration signal
 - mean: mean value
 - std: standard deviation
 - jerk: jerk signal
 - gravity: gravity acceleration signal
-- mag: magnitude
-- x: gyroscopic x axial raw signal
-- y: gyroscopic y axial raw signal
-- z: gyroscopic z axial raw signal
+- mag: magnitude of three-dimensional signal
+- x: 3-axial signal in the X direction
+- y: 3-axial signal in the Y direction
+- z: 3-axial signal in the Z direction
 
- - features
+ - features units
 
 - angletimebodyaccjerkmeangravitymean
 - angletimebodyaccmeangravity
@@ -179,3 +179,4 @@ Subjects who performed the activity. Each subject is assigned a unique integer f
 Average value of each feature per person, per activity.
 
  - class = numeric
+ - units are averages of 
